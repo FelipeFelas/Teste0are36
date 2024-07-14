@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parabéns Marelo!</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: black;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #000; /* Fundo preto */
+            color: #fff; /* Texto branco */
+            overflow-x: hidden; /* Impede a barra de rolagem horizontal */
+        }
+
+        header, footer {
+            background-color: #f8b400;
+            color: black;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .banner {
+            position: relative;
+            background-image: url('banner-image.jpg'); 
+            background-size: cover;
+            background-position: top;
+            text-align: center;
+            padding: 100px 20px;
+            color: white;
+            height: 150px; /* Ajuste esta altura para controlar a quantidade de scroll */
+            background-attachment: fixed; /* Fixa o fundo */
+        }
+
+        .banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Overlay com opacidade */
+            z-index: 1;
+        }
+
+        .banner h1, .banner p {
+            position: relative;
+            z-index: 2;
+            margin: 0;
+        }
+
+        .banner h1 {
+            font-size: 2.5em; /* Reduzido o tamanho da fonte para telas menores */
+            color: #f8b400;
+        }
+
+        .title-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .title-container h2 {
+            background-color: #f8b400;
+            padding: 10px 20px;
+            font-size: 1.8em; 
+            color: black;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        .cards-container {
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .card {
+            background-color: #333;
+            border: 1px solid #f8b400;
+            border-radius: 10px;
+            padding: 20px;
+            width: calc(30% - 20px); 
+            margin-bottom: 20px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .card h2 {
+            color: #f8b400;
+        }
+
+        .text-image-container {
+            display: flex;
+            align-items: center; 
+            margin: 20px;
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            flex-direction: column; /* Por padrão, imagem acima do texto */
+        }
+
+        .text-image-container img {
+            max-width: 40%; 
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+
+        .text-image-container div {
+            width: 60%; 
+            color: black;
+            text-align: left; 
+            background-color: #f8b400;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #f8b400;
+            color: black;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        /* Responsividade */
+        @media (min-width: 700px) { /* Ajuste para telas maiores que 700px */
+            .text-image-container {
+                flex-direction: row; /* Layout lado a lado */
+            }
+
+            .text-image-container img {
+                max-width: 40%; 
+                margin-right: 20px;
+            }
+
+            .text-image-container div {
+                width: 60%; 
+                text-align: left; 
+            }
+        }
+
+        @media (max-width: 900px) { 
+            .card {
+                width: calc(45% - 20px); 
+            }
+        }
+
+        @media (max-width: 700px) { 
+            .card {
+                width: calc(100% - 20px); 
+            }
+
+            .text-image-container img {
+                max-width: 90%; 
+            }
+
+            .text-image-container div {
+                width: 90%; 
+                text-align: center; 
+            }
+
+            .banner h1 {
+                font-size: 2em;
+            }
+
+            .title-container h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Parabéns Marelo!</h1>
+    </header>
+    
+    <div class="banner">
+        <h1>PARABÉNS MARELOOOOOOOOO!</h1>
+        <p>MNTS ANOS DE VIDA MANO.</p>
+    </div>
+    
+    <div class="title-container">
+        <h2>MOTIVOS PELO QUAL O MARELO É FODA </h2>
+    </div>
+    
+    <div class="cards-container">
+        <div class="card">
+            <h2>ELE É BONITO</h2>
+            <p>Nunca nesse mundo um homem tão bonito tinha pisado na terra.</p>
+        </div>
+        <div class="card">
+            <h2>É UM CARA FODA</h2>
+            <p>Um mano pra todo momento ( lá ele) ele esta sempre com vc para converçar e isso é <span style="color: #f8b400;">FODA PRA CARALHO</span>.</p>
+        </div>
+        <div class="card">
+            <h2>ELE É O REI DOS GAMERS</h2>
+            <p>Ele como gamer ele foi o mestre splinter para homens como:<span style="color: #f8b400;"> DAVA JOVES , VINICIUS 22</span>  e entre grande nomes dos games .</p>
+        </div>
+    </div>
+    
+    <div class="text-image-container">
+        <img src="additional-image.jpg" alt="Imagem adicional">
+        <div>
+            <h2>UMAS DAS FALAS MAIS EMBLEMATICAS DE MARELO</h2>
+            <p>É a potência, não tem como
+Moleque nem se mete</p>
+<p>É a potência, não tem como</p>
+<p>Por favor, não se mete</p>
+<p>É a potência, com licença, vô fumar maconha</p>
+<p>É a potência É a potência (caralho viado)</p>
+
+<p>Maconha, Conha, conha</p>
+<p>Maconha, Conha, conha (caralho viado)</p>
+<p>Maconha, Conha, conha</p>
+<p>Maconha, Conha, conha (caralho viado)</p>
+<p>Maconha</p>
+
+<p>(Duas maconha? Ou um pó?).</p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>bó comer pizza	</p>
+    </footer>
+</body>
+</html>
